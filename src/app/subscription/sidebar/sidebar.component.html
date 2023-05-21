@@ -1,0 +1,9 @@
+<aside class="sidebar">
+  <ng-container *ngFor="let step of allSteps()">
+    <app-step-card
+      [stepNo]="step.no"
+      [title]="step.name"
+      [isSelected]="step.isCurrent"
+    ></app-step-card>
+  </ng-container>
+</aside>

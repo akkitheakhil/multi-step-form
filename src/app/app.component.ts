@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -10,6 +9,4 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {
-  title = 'multi-step-form';
-}
+export class AppComponent {}

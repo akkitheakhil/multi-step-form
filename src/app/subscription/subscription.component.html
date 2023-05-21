@@ -1,0 +1,30 @@
+<div class="subscription">
+  <div class="container">
+    <app-sidebar [currentStep]="currentStep"></app-sidebar>
+    <form class="form">
+      <ng-container [ngSwitch]="currentStep()">
+        <ng-container *ngSwitchCase="stepConst.PERSONAL_INFO">
+          <app-personal-info (next)="handleNextStep()" />
+        </ng-container>
+        <ng-container *ngSwitchCase="stepConst.PLANS">
+          <app-plans
+            (next)="handleNextStep()"
+            (previous)="handlePreviousStep()"
+          />
+        </ng-container>
+        <ng-container *ngSwitchCase="stepConst.ADD_ONS">
+          <app-add-ons
+            (next)="handleNextStep()"
+            (previous)="handlePreviousStep()"
+          />
+        </ng-container>
+        <ng-container *ngSwitchCase="stepConst.SUMMARY">
+          <app-summary
+            (next)="handleNextStep()"
+            (previous)="handlePreviousStep()"
+          />
+        </ng-container>
+      </ng-container>
+    </form>
+  </div>
+</div>

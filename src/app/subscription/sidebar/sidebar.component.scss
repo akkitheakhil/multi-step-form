@@ -1,0 +1,10 @@
+.sidebar {
+  display: flex;
+  width: 275px;
+  height: 100%;
+  background: url(/assets/images/bg-sidebar-desktop.svg) center bottom;
+  border-radius: 12px;
+  padding: 32px;
+  flex-direction: column;
+  gap: 32px;
+}

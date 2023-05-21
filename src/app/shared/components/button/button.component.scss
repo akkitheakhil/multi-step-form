@@ -1,0 +1,36 @@
+.button {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all ease-in 250ms;
+
+  &.primary {
+    color: var(--white);
+    background-color: var(--marine-blue);
+
+    &:hover {
+      background-color: var(--marine-blue-light);
+    }
+  }
+
+  &.secondary {
+    color: var(--cool-gray);
+    background-color: var(--white);
+
+    &:hover {
+      color: var(-marine-blue);
+      background-color: var(--light-gray);
+    }
+  }
+
+  &.accent {
+    color: var(--white);
+    background-color: var(--purplish-blue);
+    &:hover {
+      background-color: var(--purplish-blue-light);
+    }
+
+  }
+}

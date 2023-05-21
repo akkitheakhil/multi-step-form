@@ -1,0 +1,16 @@
+<form class="form-container">
+  <div class="actions">
+    <app-button
+      [disabled]="false"
+      label="CONFIRM"
+      type="accent"
+      (click)="next.emit()"
+    ></app-button>
+    <app-button
+      [disabled]="false"
+      label="PREVIOUS"
+      type="secondary"
+      (click)="previous.emit()"
+    ></app-button>
+  </div>
+</form>

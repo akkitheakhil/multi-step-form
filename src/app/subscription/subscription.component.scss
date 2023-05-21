@@ -1,0 +1,21 @@
+.subscription {
+  margin: auto auto;
+  height: 100vh;
+  height: 100dvh;
+  width: 100vw;
+  width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    border-radius: 30px;
+    display: flex;
+    height: 540px;
+    width: 890px;
+
+    .form {
+      width: 100%;
+      margin: 0 80px;
+    }
+  }
+}
