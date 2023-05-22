@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { ButtonComponent } from '@shared/components/button/button.component';
-import { BaseFormStep } from '../base-step.interface';
+import { BaseFormStep } from '@app/subscription-page/steps/base-step.interface';
 
 @Component({
-  selector: 'app-summary',
+  selector: 'app-add-ons',
   standalone: true,
   imports: [CommonModule, ButtonComponent],
-  templateUrl: './summary.component.html',
-  styleUrls: ['./summary.component.scss'],
+  templateUrl: './add-ons.component.html',
+  styleUrls: ['./add-ons.component.scss'],
 })
-export class SummaryComponent implements BaseFormStep<SummaryComponent> {
+export class AddOnsComponent implements BaseFormStep<AddOnsComponent> {
   @Output() next = new EventEmitter<void>();
   @Output() previous = new EventEmitter<void>();
 }

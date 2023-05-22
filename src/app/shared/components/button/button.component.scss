@@ -5,6 +5,7 @@
   padding: 12px 16px;
   cursor: pointer;
   transition: all ease-in 250ms;
+  min-width: 100px;
 
   &.primary {
     color: var(--white);

@@ -4,8 +4,8 @@ export const routes: Routes = [
   {
     path: 'subscription',
     loadComponent: () =>
-      import('./subscription/subscription.component').then(
-        (mod) => mod.SubscriptionComponent
+      import('./subscription-page/subscription-page.component').then(
+        (mod) => mod.SubscriptionPageComponent
       ),
   },
   {

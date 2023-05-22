@@ -19,13 +19,13 @@ const STEPS_COMPONENT = [
 const STEPS_ARRAY = Object.entries(STEPS).map(([_, value]): Step => value);
 
 @Component({
-  selector: 'app-subscription',
+  selector: 'app-subscription-page',
   standalone: true,
   imports: [CommonModule, ...STEPS_COMPONENT],
-  templateUrl: './subscription.component.html',
-  styleUrls: ['./subscription.component.scss'],
+  templateUrl: './subscription-page.component.html',
+  styleUrls: ['./subscription-page.component.scss'],
 })
-export class SubscriptionComponent {
+export class SubscriptionPageComponent {
   protected stepConst = STEPS;
   protected stepNo = signal<number>(0);
   protected currentStep = signal<Step>(STEPS.PERSONAL_INFO);
